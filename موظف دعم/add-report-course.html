@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>support-employee</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="plugins/jquery-nice-select-1.1.0/css/nice-select.css"> -->
+
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="close" id="closeSidebar"><i class="fa-solid fa-xmark"></i></div>
+        <div class="content">
+            <div class="logo">
+                <img src="../imgs/logo.png" alt="">
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="home.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/home.png" alt="">
+                        </span>
+                        الرئيسية
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="trainees.html" class="active">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/trainer.png" alt="">
+                        </span>
+                        قائمة المتدربين
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="list-of-coaches.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/Teacher.png" alt="">
+                        </span>
+                        قائمة المدربين
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/online-learning.png" alt="">
+                        </span>
+                        الدورات
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/setting.png" alt="">
+                        </span>
+                        الاعدادات
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/noun_logout.png" alt="">
+                        </span>
+                        تسجيل الخروج
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar-me" id="navbar">
+        <div class="container-c">
+            <div class="content">
+                <div class="menu" id="menu">
+                    <img src="../imgs/icons/menu.png" alt="">
+                </div>
+                <form action="">
+                    <div class="input-g">
+                        <input type="text" placeholder="كلمات مفتاحية">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
+                <div class="left">
+                    <div class="not">
+                        <a href="notifications.html"></a>
+                        <img src="../imgs/icons/bell.png" alt="">
+                        <span class="number">3</span>
+                    </div>
+                    <div class="account">
+                        <img src="../imgs/icons/239395281_3017692991796113_2441625955612479858_n.png" alt="">
+                        <div class="info">
+                            <h3>أحمد مكاوي </h3>
+                            <span>اداري</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-sec" id="main">
+        <div class="container-c">
+
+            <!-- Start Text Section -->
+            <div class="text">
+                <h1 class="head">قائمة المتدربين</h1>
+                <ul class="breadcrumb-me">
+                    <li class="breadcrumb-item-me"><a href="trainees.html">قائمة المتدربين</a></li>
+                    <li class="breadcrumb-item-me active"> / بيانات المتدرب</li>
+                </ul>
+            </div>
+
+            <!-- Start Add Admin Section -->
+            <div class="add-new-trainer add-new-admain">
+                <div class="add-new">
+                    <form action="trainerData.html">
+                        <div class="section-one section-form">
+                            <h3 class="title">اضافة تقرير تقييم الدورات للمتدربين</h3>
+                            <div class="content">
+                                <div class="inputs">
+                                    <div class="input-group input-group-full">
+                                        <label for="">اسم المتدرب</label>
+                                        <input type="text" placeholder="الرجاء ادخال اسم المتدرب">
+                                    </div>
+                                    <div class="input-group input-group-full">
+                                        <label for="courseName">اسم الدورة</label>
+                                        <select name="" id="courseName">
+                                            <option value="0" selected disabled>الرجاء اختيار اسم الدورة</option>
+                                            <option value="1">الرجاء اختيار اسم الدورة</option>
+                                            <option value="2">الرجاء اختيار اسم الدورة</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group input-group-full">
+                                        <label for="">فترة الدورة</label>
+                                        <input type="text" placeholder="من  2022/8/1 إلى 2022/8/10" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-two section-form add-report">
+                            <h3 class="title">المدرب</h3>
+                            <div class="content">
+                                <div class="radio-boxs">
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12"> تمكنه من المحتوى العلمي للبرنامج ؟</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="rad1" id="da3ef">
+                                                <label for="da3ef">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad1" id="maqbool">
+                                                <label for="maqbool">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad1" id="good">
+                                                <label for="good">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad1" id="veryGood">
+                                                <label for="veryGood">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad1" id="ex">
+                                                <label for="ex">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">قدرته على توصيل المعارف و المعلومات</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="rad2" id="da3ef2">
+                                                <label for="da3ef2">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad2" id="maqbool2">
+                                                <label for="maqbool2">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad2" id="good2">
+                                                <label for="good2">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad2" id="veryGood2">
+                                                <label for="veryGood2">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad2" id="ex2">
+                                                <label for="ex2">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">قدرته على ربط المادة التدريبية بالواقع العملي للمتدربين</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="rad3" id="da3ef3">
+                                                <label for="da3ef3">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad3" id="maqbool3">
+                                                <label for="maqbool3">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad3" id="good3">
+                                                <label for="good3">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad3" id="veryGood3">
+                                                <label for="veryGood3">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad3" id="ex3">
+                                                <label for="ex3">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">تنوع أساليبه التدريبية و األنشطة المستخدمة</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="rad4" id="da3ef4">
+                                                <label for="da3ef4">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad4" id="maqbool4">
+                                                <label for="maqbool4">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad4" id="good4">
+                                                <label for="good4">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad4" id="veryGood4">
+                                                <label for="veryGood4">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad4" id="ex4">
+                                                <label for="ex4">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">قدرته على إدارة النقاش و تحفيز المشاركين</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="rad5" id="da3ef5">
+                                                <label for="da3ef5">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad5" id="maqbool5">
+                                                <label for="maqbool5">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad5" id="good5">
+                                                <label for="good5">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad5" id="veryGood5">
+                                                <label for="veryGood5">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="rad5" id="ex5">
+                                                <label for="ex5">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-two section-form add-report">
+                            <h3 class="title">الحقيبة التدريبية</h3>
+                            <div class="content">
+                                <div class="radio-boxs">
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">ملائمة توزيع موضوعات الحقيبة على الجدول الزمني</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="course1" id="da3efcou">
+                                                <label for="da3efcou">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course1" id="maqboolcou">
+                                                <label for="maqboolcou">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course1" id="goodcou">
+                                                <label for="goodcou">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course1" id="veryGoodcou">
+                                                <label for="veryGoodcou">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course1" id="excou">
+                                                <label for="excou">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">كفاية موضوعات الحقيبة لتحقيق أهداف البرنامج</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="course2" id="da3efcou2">
+                                                <label for="da3efcou2">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course2" id="maqboolcou2">
+                                                <label for="maqboolcou2">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course2" id="goodcou2">
+                                                <label for="goodcou2">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course2" id="veryGoodcou2">
+                                                <label for="veryGoodcou2">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course2" id="excou2">
+                                                <label for="excou2">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">مناسبة موضوعات الحقيبة لمستويات المتدربين</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="course3" id="da3efcou3">
+                                                <label for="da3efcou3">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course3" id="maqboolcou3">
+                                                <label for="maqboolcou3">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course3" id="goodcou3">
+                                                <label for="goodcou3">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course3" id="veryGoodcou3">
+                                                <label for="veryGoodcou3">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course3" id="excou3">
+                                                <label for="excou3">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">توافق األنشطة التدريبية مع موضوعات الحقيبة</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="course4" id="da3efcou4">
+                                                <label for="da3efcou4">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course4" id="maqboolcou4">
+                                                <label for="maqboolcou4">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course4" id="goodcou4">
+                                                <label for="goodcou4">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course4" id="veryGoodcou4">
+                                                <label for="veryGoodcou4">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course4" id="excou4">
+                                                <label for="excou4">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">سالمة و سالسة اللغة التي كتبت بها الحقيبة</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="course5" id="da3efcou5">
+                                                <label for="da3efcou5">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course5" id="maqboolcou5">
+                                                <label for="maqboolcou5">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course5" id="goodcou5">
+                                                <label for="goodcou5">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course5" id="veryGoodcou5">
+                                                <label for="veryGoodcou5">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="course5" id="excou5">
+                                                <label for="excou5">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-two section-form add-report">
+                            <h3 class="title">البيئة التدريبية</h3>
+                            <div class="content">
+                                <div class="radio-boxs">
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">منسق البرنامج التدريبي</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="app1" id="da3efapp">
+                                                <label for="da3efapp">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app1" id="maqboolapp">
+                                                <label for="maqboolapp">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app1" id="goodapp">
+                                                <label for="goodapp">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app1" id="veryGoodapp">
+                                                <label for="veryGoodapp">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app1" id="exapp">
+                                                <label for="exapp">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">وقت انعقاد الجلسات التدريبية</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="app2" id="da3efapp2">
+                                                <label for="da3efapp2">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app2" id="maqboolapp2">
+                                                <label for="maqboolapp2">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app2" id="goodapp2">
+                                                <label for="goodapp2">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app2" id="veryGoodapp2">
+                                                <label for="veryGoodapp2">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app2" id="exapp2">
+                                                <label for="exapp2">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">مدة البرنامج</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="app3" id="da3efapp3">
+                                                <label for="da3efapp3">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app3" id="maqboolapp3">
+                                                <label for="maqboolapp3">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app3" id="goodapp3">
+                                                <label for="goodapp3">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app3" id="veryGoodapp3">
+                                                <label for="veryGoodapp3">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app3" id="exapp3">
+                                                <label for="exapp3">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">القاعة التدريبية و تجهيزاتها ( الاضاءة ، التهوية ، الاجهزة ،.. إلخ)</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="app4" id="da3efapp4">
+                                                <label for="da3efapp4">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app4" id="maqboolapp4">
+                                                <label for="maqboolapp4">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app4" id="goodapp4">
+                                                <label for="goodapp4">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app4" id="veryGoodapp4">
+                                                <label for="veryGoodapp4">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app4" id="exapp4">
+                                                <label for="exapp4">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="radio-b row">
+                                        <span class="day col-lg-6 col-md-12">تنظيم جلوس المتدربين داخل القاعة التدريبية</span>
+                                        <div class="radio-sec col-lg-6 col-md-12">
+                                            <div class="box">
+                                                <input type="radio" name="app5" id="da3efapp5">
+                                                <label for="da3efapp5">ضعيف</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app5" id="maqboolapp5">
+                                                <label for="maqboolapp5">مقبول</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app5" id="goodapp5">
+                                                <label for="goodapp5">جيد</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app5" id="veryGoodapp5">
+                                                <label for="veryGoodapp5">جيد جدا</label>
+                                            </div>
+                                            <div class="box">
+                                                <input type="radio" name="app5" id="exapp5">
+                                                <label for="exapp5">ممتاز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-two section-form">
+                            <h3 class="title">انطباعك العام عن البرنامج التدريبى</h3>
+                            <div class="content">
+                                <div class="inputs">
+                                    <div class="input-group input-group-full">
+                                        <label for="">الانطباع العام</label>
+                                        <textarea name="" id="" rows="5" placeholder="الرجاء ادخال الانطباع العام"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="اضافة" class="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- <script src="plugins/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script> -->
+
+    <script>
+        // $('select').niceSelect();
+
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>support-employee</title>
+       <!-- Icons -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+       <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+       <!-- <link rel="stylesheet" href="plugins/jquery-nice-select-1.1.0/css/nice-select.css"> -->
+       <!-- <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/> -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/css/bootstrap-select.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="close" id="closeSidebar"><i class="fa-solid fa-xmark"></i></div>
+        <div class="content">
+            <div class="logo">
+                <img src="../imgs/logo.png" alt="">
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="home.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/home.png" alt="">
+                        </span>
+                        الرئيسية
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="trainees.html"  class="active">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/trainer.png" alt="">
+                        </span>
+                        قائمة المتدربين
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="list-of-coaches.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/Teacher.png" alt="">
+                        </span>
+                        قائمة المدربين
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/online-learning.png" alt="">
+                        </span>
+                        الدورات
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/setting.png" alt="">
+                        </span>
+                        الاعدادات
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/noun_logout.png" alt="">
+                        </span>
+                        تسجيل الخروج
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar-me" id="navbar">
+        <div class="container-c">
+            <div class="content">
+                <div class="menu" id="menu">
+                    <img src="../imgs/icons/menu.png" alt="">
+                </div>
+                <form action="">
+                    <div class="input-g">
+                        <input type="text" placeholder="كلمات مفتاحية">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
+                <div class="left">
+                    <div class="not">
+                        <a href="notifications.html"></a>
+                        <img src="../imgs/icons/bell.png" alt="">
+                        <span class="number">3</span>
+                    </div>
+                    <div class="account">
+                        <img src="../imgs/icons/239395281_3017692991796113_2441625955612479858_n.png" alt="">
+                        <div class="info">
+                            <h3>أحمد مكاوي </h3>
+                            <span>اداري</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-sec" id="main">
+        <div class="container-c">
+
+            <!-- Start Text Section -->
+            <div class="text">
+                <h1 class="head">اضافة متدرب جديد</h1>
+                <ul class="breadcrumb-me">
+                    <li class="breadcrumb-item-me"><a href="trainees.html">قائمة المتدربين</a></li>
+                    <li class="breadcrumb-item-me active"> / إضافة متدرب جديد</li>
+                </ul>
+            </div>
+
+            <!-- Start Add Trainer Section -->
+            <div class="add-new-trainer add-new-admain">
+                <div class="add-new">
+                    <form action="">
+                        <div class="section-one section-form">
+                            <h3 class="title">بيانات المتدرب الجديد</h3>
+                            <div class="content">
+
+                                <div class="trainer-photo">
+                                    <label for="userPhoto">
+                                        <div class="photo">
+                                            <img src="../imgs/cloud-storage.png" alt="" id="photo">
+                                        </div>
+                                    </label>
+                                    <div class="camera-photo">
+                                        <img src="../imgs/photo-button.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h4 class="head-photo">صورة المستخدم</h4>
+                                        <span class="txt">يرجي رفع صوره مقاس 200*200</span>
+                                    </div>
+                                    <input type="file" name="" id="userPhoto">
+                                </div>
+                                <div class="inputs">
+                                    <div class="input-g input-group-full">
+                                        <label for="">اسم المستخدم</label>
+                                        <input type="text" placeholder="الرجاء ادخال اسم المستخدم">
+                                    </div>
+                                    <div class="input-g input-group-full">
+                                        <label for="">كلمة المرور</label>
+                                        <input type="password" placeholder="الرجاء ادخال كلمة المرور">
+                                    </div>
+                                    <div class="input-g input-group-full">
+                                        <label for="">الاسم ثلاثي</label>
+                                        <input type="text" placeholder="الرجاء ادخال الاسم ثلاثي">
+                                    </div>
+                                    <div class="input-group-container">
+                                        <div class="input-g age-date">
+                                            <label for="">العمر</label>
+                                            <input type="text" placeholder='الرجاء اختيار تاريخ الميلاد' id="datepicker">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">الجنس</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>الرجاء اختيار الجنس</option>
+                                                <option value="1">الرجاء اختيار الجنس</option>
+                                                <option value="2">الرجاء اختيار الجنس</option>
+                                            </select>
+                                            
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">رقم الهوية</label>
+                                            <input type="number" placeholder="الرجاء ادخال رقم الهوية">
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">رقم الجوال</label>
+                                            <input type="number" placeholder='الرجاء ادخال رقم الجوال'>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">المستوي التعليمي</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>الرجاء اختيار المستوي التعليمي</option>
+                                                <option value="1">الرجاء اختيار المستوي التعليمي</option>
+                                                <option value="2">الرجاء اختيار المستوي التعليمي</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">المنطقة الجغرافية</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>الرجاء اختيار المنطقة الجغرافية</option>
+                                                <option value="1">الرجاء اختيار المنطقة الجغرافية</option>
+                                                <option value="2">الرجاء اختيار المنطقة الجغرافية</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">المحافظة</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>الرجاء اختيار المحافظة</option>
+                                                <option value="1">الرجاء اختيار المحافظة</option>
+                                                <option value="2">الرجاء اختيار المحافظة</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">الحالة الاجتماعية</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>الرجاء اختيار الحالة الاجتماعية</option>
+                                                <option value="1">الرجاء اختيار الحالة الاجتماعية</option>
+                                                <option value="2">الرجاء اختيار الحالة الاجتماعية</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">مستفيد من الضمان</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>الرجاء اختيار هل مستفيد من الضمان</option>
+                                                <option value="1">نعم</option>
+                                                <option value="2">لا</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">هل تعاني وجود اعاقة</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>هل تعاني وجود إعاقة ؟</option>
+                                                <option value="1">نعم</option>
+                                                <option value="2">لا</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">المجال التدريبي</label>
+                                            <input type="text" placeholder="الرجاء ادخال المجال التدريبي">
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">اسم البرنامج</label>
+                                            <!-- <input type="text" placeholder='الرجاء ادخال اسم البرنامج'> -->
+                                            <select name="" id="" multiple class="selectpicker" title="الرجاء ادخال اسم الدورة" multiple data-live-search="true" >
+                                                <!-- <option value="" selected disabled>الرجاء ادخال اسم البرنامج</option> -->
+                                                <option value="">اسم</option>
+                                                <option value="">دورة</option>
+                                                <option value="">اسم</option>
+                                                <option value="">اسم</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-g">
+                                            <label for="">عدد أيام البرنامج</label>
+                                            <input type="number" placeholder='الرجاء ادخال عدد أيام البرنامج'>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">طريقة التسجيل</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>الرجاء اختيار طريقة التسجيل</option>
+                                                <option value="1">الرجاء اختيار طريقة التسجيل</option>
+                                                <option value="2">الرجاء اختيار طريقة التسجيل</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">مقبول للمقابلة</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>هل المستخدم مقبول للمقابلة</option>
+                                                <option value="1">هل المستخدم مقبول للمقابلة</option>
+                                                <option value="2">هل المستخدم مقبول للمقابلة</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">نتيجة المقابلة</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>هل المستخدم مقبول للمقابلة</option>
+                                                <option value="1">هل المستخدم مقبول للمقابلة</option>
+                                                <option value="2">هل المستخدم مقبول للمقابلة</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">معتمد للحضور من البنك</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>هل المستخدم معتمد للحضور من البنك ؟</option>
+                                                <option value="1">هل المستخدم معتمد للحضور من البنك ؟</option>
+                                                <option value="2">هل المستخدم معتمد للحضور من البنك ؟</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">أسباب عدم القبول</label>
+                                            <input type="text" placeholder='الرجاء ادخال أسباب عدم القبول'>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">حالة الحضور للبرنامج</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>الرجاء اختيار حالة الحضور للبرنامج</option>
+                                                <option value="1">الرجاء اختيار حالة الحضور للبرنامج</option>
+                                                <option value="2">الرجاء اختيار حالة الحضور للبرنامج</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">عدد أيام الحضور</label>
+                                            <input type="number" placeholder='الرجاء ادخال عدد أيام الحضور'>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">أسباب عدم الحضور</label>
+                                            <input type="text" placeholder='الرجاء ادخال أسباب عدم الحضور'>
+                                        </div>
+                                        <div class="input-g file-g-co">
+                                            <label for="">تم رفع عذر الغياب على المنصة</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>هل تم رفع عذر الغياب على المنصة ؟</option>
+                                                <option value="1">نعم</option>
+                                                <option value="2">لا</option>
+                                            </select>
+                                            <div class="input-file-g">
+                                                <label for="file-absence" id="fileUnpre">
+                                                    <img src="../imgs/icons/Icon ionic-md-cloud-upload.png" alt="">
+                                                </label>
+                                                <input type="file" id="file-absence">
+                                            </div>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">لديه/ها مشروع قائم</label>
+                                            <select name="" onchange="showSelected(this, 'sh')">
+                                                <option value="" selected disabled>هل لديه/ها مشروع قائم ؟</option>
+                                                <option value="" data-name="sh">نعم</option>
+                                                <option value="" data-name="hide">لا</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g sh hide-all sh2" data-name="sh">
+                                            <label for="">حالة المشروع</label>
+                                            <select name="" id="" onchange="showSelected(this, 'stop')">
+                                                <option value="" selected disabled>الرجاء اختيار حالة المشروع</option>
+                                                <option value="">قائم</option>
+                                                <option value="" data-name="stop">متوقف</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g stop hide-all stop2" data-name="stop">
+                                            <label for="">أسباب التوقف</label>
+                                            <input type="text" placeholder='الرجاء ادخال أسباب التوقف'>
+                                        </div>
+                                        <div class="input-g sh hide-all sh2" data-name="sh">
+                                            <label for="">عدد افراد الاسرة الذين يعملون بالمشروع</label>
+                                            <input type="number" placeholder='الرجاء ادخال عدد افراد الاسرة '>
+                                        </div>
+                                        <div class="input-g sh hide-all sh2" data-name="sh">
+                                            <label for="">هل حصلت علي شهادة الاسر المنتتجة</label>
+                                            <select name="" id=""  onchange="showSelected(this, 'Shehada')">
+                                                <option value="" selected disabled>هل حصلت علي شهادة الاسر المنتتجة</option>
+                                                <option value="" data-name="Shehada">نعم</option>
+                                                <option value="2">لا</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g Shehada hide-all Shehada2" data-name="Shehada">
+                                            <label for="">رقم الشهادة</label>
+                                            <input type="number" placeholder='الرجاء ادخال رقم الشهادة'>
+                                        </div>
+                                        <div class="input-g sh hide-all sh2" data-name="sh">
+                                            <label for="">قبول البنك في بيانات المتدرب</label>
+                                            <select name="" id="">
+                                                <option value="" selected disabled>هل تم قبول البنك في بيانات المتدرب</option>
+                                                <option value="1">نعم</option>
+                                                <option value="2">لا</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input-g input-group-full sh hide-all sh2" data-name="sh">
+                                        <label for="">ملاحظات</label>
+                                        <textarea name="" id="" rows="8" placeholder="ملاحظات"></textarea>
+                                    </div>
+                                </div>
+                                <div class="files">
+                                    <div class="file">
+                                        <label class="label-me">نموذج تعهد</label>
+                                        <label for="promesNew" class='imgs'>
+                                            <img src="../imgs/icons/file.png" alt="">
+                                            <span>إرفاق ملف</span>
+                                        </label>
+                                        <input type="file" name="" accept=".doc,.docx,.pdf" class="file-class" id="promesNew">
+                                    </div>
+                                    <div class="file">
+                                        <label class="label-me">نموذج تسجيل أسرة</label>
+                                        <label for="familyNew" class='imgs'>
+                                            <img src="../imgs/icons/file.png" alt="">
+                                            <span>إرفاق ملف</span>
+                                        </label>
+                                        <input type="file" name=""  accept=".doc,.docx,.pdf" class="file-class" id="familyNew">
+                                    </div>
+                                    <div class="file">
+                                        <label class="label-me">نموذج مقابلة أسرة</label>
+                                        <label for="familyInterVeiw" class='imgs'>
+                                            <img src="../imgs/icons/file.png" alt="">
+                                            <span>إرفاق ملف</span>
+                                        </label>
+                                        <input type="file" name=""  accept=".doc,.docx,.pdf" class="file-class" id="familyInterVeiw">
+                                    </div>
+                                </div>
+                                <div id="files-name"></div>
+
+                            </div>
+                        </div>
+
+                        <input type="submit" value="اضافة" class="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/js/bootstrap-select.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+        $( function() {
+             $( "#datepicker" ).datepicker();
+        } );
+
+        $('.selectpicker').selectpicker();
+
+
+        const AllInputsHide = document.querySelectorAll('.hide-all');
+
+        function showSelected(select, Divs){
+            const showDivs = document.querySelectorAll(`.${Divs}`);
+            // console.log(select.options[select.selectedIndex].getAttribute('data-name'))
+
+            for(let i=0; i<showDivs.length; i++){
+                if(select.options[select.selectedIndex].getAttribute('data-name') === showDivs[i].getAttribute('data-name')){
+                    showDivs[i].style.display = 'block';
+                } else{
+                    showDivs[i].style.display = 'none';
+                    if(select.options[select.selectedIndex].getAttribute('data-name') === 'hide'){
+                        hideAll();
+                    }
+                }
+            }
+
+        }
+
+        function hideAll(){
+            AllInputsHide.forEach((input)=>{
+                input.style.display = 'none';
+            })
+        }
+
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

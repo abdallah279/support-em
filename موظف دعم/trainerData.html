@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>support-employee</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="datePicker-position">
+    <div class="sidebar" id="sidebar">
+        <div class="close" id="closeSidebar"><i class="fa-solid fa-xmark"></i></div>
+        <div class="content">
+            <div class="logo">
+                <img src="../imgs/logo.png" alt="">
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="home.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/home.png" alt="">
+                        </span>
+                        الرئيسية
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="trainees.html"  class="active">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/trainer.png" alt="">
+                        </span>
+                        قائمة المتدربين
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="list-of-coaches.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/Teacher.png" alt="">
+                        </span>
+                        قائمة المدربين
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/online-learning.png" alt="">
+                        </span>
+                        الدورات
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/setting.png" alt="">
+                        </span>
+                        الاعدادات
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/noun_logout.png" alt="">
+                        </span>
+                        تسجيل الخروج
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar-me" id="navbar">
+        <div class="container-c">
+            <div class="content">
+                <div class="menu" id="menu">
+                    <img src="../imgs/icons/menu.png" alt="">
+                </div>
+                <form action="">
+                    <div class="input-g">
+                        <input type="text" placeholder="كلمات مفتاحية">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
+                <div class="left">
+                    <div class="not">
+                        <a href="notifications.html"></a>
+                        <img src="../imgs/icons/bell.png" alt="">
+                        <span class="number">3</span>
+                    </div>
+                    <div class="account">
+                        <img src="../imgs/icons/239395281_3017692991796113_2441625955612479858_n.png" alt="">
+                        <div class="info">
+                            <h3>أحمد مكاوي </h3>
+                            <span>اداري</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-sec" id="main">
+        <div class="container-c">
+
+            <!-- Start Text Section -->
+            <div class="text">
+                <h1 class="head">قائمة المتدربين</h1>
+                <ul class="breadcrumb-me">
+                    <li class="breadcrumb-item-me"><a href="trainees.html">قائمة المتدربين</a></li>
+                    <li class="breadcrumb-item-me active"> / بيانات المتدرب</li>
+                </ul>
+            </div>
+
+            <!-- Start Trainer-data Section -->
+            <section class="trainer-data">
+                <div class="content">
+                    <h3 class="title">بيانات المتدرب</h3>
+                    <div class="trainer-info">
+                        <div class="item">
+                            <span>اسم المستخدم:</span>
+                            <span>احمد مكاوى</span>
+                        </div>
+                        <div class="item">
+                            <span>الاسم ثلاثي:</span>
+                            <span>أحمد محمد مكاوي</span>
+                        </div>
+                        <div class="item">
+                            <span>العمر:</span>
+                            <span>1995/2/26</span>
+                        </div>
+                        <div class="item">
+                            <span>الجنس:</span>
+                            <span>ذكر</span>
+                        </div>
+                        <div class="item">
+                            <span>رقم الهوية:</span>
+                            <span>123456</span>
+                        </div>
+                        <div class="item">
+                            <span>رقم الجوال:</span>
+                            <span>0545123723</span>
+                        </div>
+                        <div class="item">
+                            <span>المستوي التعليمي:</span>
+                            <span>جامعي</span>
+                        </div>
+                        <div class="item">
+                            <span>المنطقة الجغرافية:</span>
+                            <span>المنطقة الشمالية</span>
+                        </div>
+                        <div class="item">
+                            <span>المحافظة:</span>
+                            <span>مكة المكرمة</span>
+                        </div>
+                        <div class="item">
+                            <span>الحالة الاجتماعية:</span>
+                            <span>متزوج</span>
+                        </div>
+                        <div class="item">
+                            <span>مستفيد من الضمان:</span>
+                            <span>لا</span>
+                        </div>
+                        <div class="item">
+                            <span>هل تعاني وجود إعاقة ؟</span>
+                            <span>لا</span>
+                        </div>
+                        <div class="item">
+                            <span>المجال التدريبي:</span>
+                            <span>المجال التدريبي</span>
+                        </div>
+                        <div class="item">
+                            <span>اسم البرنامج:</span>
+                            <span>اسم البرنامج</span>
+                        </div>
+                        <div class="item">
+                            <span>عدد أيام البرنامج:</span>
+                            <span>7</span>
+                        </div>
+                        <div class="item">
+                            <span>طريقة التسجيل:</span>
+                            <span>نموذج التسجيل</span>
+                        </div>
+                        <div class="item">
+                            <span>مقبول للمقابلة:</span>
+                            <span>نعم</span>
+                        </div>
+                        <div class="item">
+                            <span>نتيجة المقابلة:</span>
+                            <span>مقبول</span>
+                        </div>
+                        <div class="item">
+                            <span>معتمد للحضور من البنك:</span>
+                            <span>نعم</span>
+                        </div>
+                        <div class="item">
+                            <span>عدد أيام الحضور:</span>
+                            <span>5</span>
+                        </div>
+                        <div class="item">
+                            <span>أسباب عدم الحضور:</span>
+                            <span>هذا النص هو مثال لنص</span>
+                        </div>
+                        <div class="item">
+                            <span>عذر الغياب على المنصة:</span>
+                            <span class="fl-name">اسم الملف</span>
+                        </div>
+                        <div class="item">
+                            <span>لديه/ها مشروع قائم:</span>
+                            <span>نعم</span>
+                        </div>
+                        <div class="item">
+                            <span>حالة المشروع:</span>
+                            <span>متوقف</span>
+                        </div>
+                        <div class="item">
+                            <span>أسباب التوقف:</span>
+                            <span>هذا النص هو مثال لنص</span>
+                        </div>
+                        <div class="item">
+                            <span>حالة المشروع:</span>
+                            <span>متوقف</span>
+                        </div>
+                        <div class="item">
+                            <span>عددالأفراد الذين يعملون بالمشروع:</span>
+                            <span>5</span>
+                        </div>
+                        <div class="item">
+                            <span>هل حصلت علي شهادة الاسر المنتجة:</span>
+                            <span>نعم</span>
+                        </div>
+                        <div class="item">
+                            <span>رقم الشهادة:</span>
+                            <span>123456789</span>
+                        </div>
+                        <div class="item">
+                            <span>قبول البنك في بيانات المتدرب:</span>
+                            <span>نعم</span>
+                        </div>
+                        <div class="item">
+                            <span>ملاحظات:</span>
+                            <span>هذا النص هو مثال لنص</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Start Info-Cards Section -->
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="heading">
+                        <h3>شهادات الدورة</h3>
+                        <span class="add" id="addBtn"><i class="fa-solid fa-plus"></i> إضافة شهادة</span>
+                    </div>
+                    <div class="content-co">
+                        <div class="content">
+                            <div class="img img-gif">
+                                <img src="../imgs/course-img.png" alt="">
+                            </div>
+                            <div class="text-info">
+                                <h4>لا توجد شهادات</h4>
+                                <p>برجاء الضغط على علامة الإضافة لاضافة شهادات الدورات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="heading">
+                        <h3>مواعيد الحضور</h3>
+                        <span class="add" id="showModel"><i class="fa-solid fa-plus"></i> إضافة أوقات</span>
+                    </div>
+
+                    <div class="content-co">
+                        <div class="content">
+                            <div class="img">
+                                <img src="../imgs/noun_add_2596962.png" alt="">
+                            </div>
+                            <div class="text-info">
+                                <h4>لا توجد أوقات</h4>
+                                <p>برجاء الضغط على علامة الإضافة لاضافة أوقات الحضور</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="content-info-container">
+                        <div class="content-info">
+                            <div class="info-abs">
+                                <span class="time-day">السبت : 10/8/2022</span>
+                                <span class="course-nm">اسم الدورة : صيانة الحاسب الألى</span>
+                                <span class="time-leave">موعد الحضور : 04:11 م</span>
+                                <span class="Checkout-tm">موعد الانصراف : <a href="#" class="Check-out-btn">تسجيل انصراف</a></span>
+                            </div>
+                        </div>
+                        <div class="content-info">
+                            <div class="info-abs">
+                                <span class="time-day">السبت : 10/8/2022</span>
+                                <span class="course-nm">اسم الدورة : صيانة الحاسب الألى</span>
+                                <span class="time-leave">موعد الحضور : 04:11 م</span>
+                                <span class="Checkout-tm">موعد الانصراف : <a href="#" class="Check-out-btn">تسجيل انصراف</a></span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="info-card files-section">
+                    <div class="heading">
+                        <h3>المرفقات</h3>
+                    </div>
+                    <div class="content-co">
+                        <div class="content">
+                            <form action="">
+                                <div class="input-group">
+                                    <label class="label">نموذج تعهد</label>
+                                    <label for="promes" class='imgs'>
+                                        <img src="../imgs/pdf.png" alt="">
+                                    </label>
+                                    <input type="file" accept=".doc,.docx,.pdf" class="file-class" name="" id="promes">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">نموذج تسجيل أسرة</label>
+                                    <label for="family" class='imgs'>
+                                        <img src="../imgs/pdf.png" alt="">
+                                    </label>
+                                    <input type="file" accept=".doc,.docx,.pdf" class="file-class" name="" id="family">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">نموذج مقابلة أسرة</label>
+                                    <label for="familyTwo" class='imgs'>
+                                        <img src="../imgs/pdf.png" alt="">
+                                    </label>
+                                    <input type="file" accept=".doc,.docx,.pdf" class="file-class" name="" id="familyTwo">
+                                </div>
+                            </form>
+                            <div id="files-name"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Buttons Section -->
+            <div class="buttons">
+                <ul class="all-buttons">
+                    <li class="button edit-btn"><a href="#">تعديل</a></li>
+                    <li class="button add-result-btn"><a href="#" id="addNategaBtn">اضافة نتائج الاختبارات</a></li>
+                    <li class="button add-Evaluate-btn"><a href="add-report-course.html">اضافة تقيم</a></li>
+                    <li class="button delete-btn"><a href="#">حذف</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Add Shehada -->
+    <div class="add-shehada popup" id="add-shehada">
+        <div class="content">
+            <div class="heading">
+                <h1 class="title">ارفاق شهادة</h1>
+            </div>
+            <form action="" id="form-co">
+                <div class="input-group">
+                    <label for="selectName" class="label">اسم الدورة</label>
+                    <select name="" id="selectName">
+                        <option value="" selected disabled>الرجاء اختيار اسم الدورة</option>
+                        <option value="">دورة واحدdddddddddddddddddddddddddddddddddddddddddddddd</option>
+                        <option value="">دورة اتنين</option>
+                        <option value="">دورة تلاته</option>
+                    </select>
+                </div>
+                <div class="sel-val"></div>
+                <div class="input-group">
+                    <label class="label">شهادة الدورة</label>
+                    <label for="file" class='imgs'>
+                        <img src="../imgs/icons/file.png" alt="">
+                        <span>إرفاق ملف</span>
+                    </label>
+                    <input type="file" name="" accept=".doc,.docx,.pdf" class="file-class-sh" id="file">
+                </div>
+                <div id="files-name-sh">
+                    <span class="name-file-sh"></span>
+                </div>
+                <input type="submit" value="اضافة" class="submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- Add Date -->
+    <div class="model-attend popup" id="modelAttend">
+        <div class="content-co">
+            <h3 class="title">طريقة تسجيل الحضور</h3>
+            <div class="buttons-att">
+                <span class="butt active" id="qrBtn">عن طريق ال qr</span>
+                <span class="butt" id="normalRegBtn">تسجيل عادى</span>
+            </div>
+            <div class="content-att">
+                <div class="add-date qr-sec model-sections active" id="qrSection">
+                    <div class="content">
+                        <form action="">
+                            <div class="input-group">
+                                <label for="selectName" class="label">اسم الدورة</label>
+                                <select name="" id="selectName">
+                                    <option value="" selected disabled>الرجاء اختيار اسم الدورة</option>
+                                    <option value="">الرجاء اختيار اسم الدورة</option>
+                                    <option value="">الرجاء اختيار اسم الدورة</option>
+                                </select>
+                            </div>
+                            <div class="qr">
+                                <img class="qr-img" src="../imgs/Group 64595.png" alt="">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="normal-attend model-sections" id='normalAttendSec'>
+                    <div class="content">
+                        <form action="">
+                            <div class="input-group date-ic">
+                                <label for="">التاريخ</label>
+                                <input type="text" id="startDate" placeholder="الرجاء ادخال تاريخ الحضور">
+                                <i class="fa-regular fa-calendar-days"></i>
+                            </div>
+                            <div class="input-group date-ic">
+                                <label for="">الوقت</label>
+                                <input type="time" style="text-align: right" placeholder="الرجاء ادخال وقت الحضور">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="img">
+                                <img class="qr-img" src="../imgs/login.png" alt="">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Natega -->
+    <div class="add-natega popup" id="add-natega">
+        <div class="content">
+            <div class="heading">
+                <h1 class="title">نتيجة الاختبار</h1>
+            </div>
+            <form action="">
+                <div class="input-group-co">
+                    <div class="input-group">
+                        <label for="valueNategaBefore" class="label">نتيجة الاختبار القبلي</label>
+                        <input type="text" id="valueNategaBefore" placeholder="الرجاء ادخال نتيجة الاختبار القبلي">
+                    </div>
+                    <div class="input-group">
+                        <label for="valuepresOne" class="label">النسبة المئوية</label>
+                        <input type="text" id="valuepresOne" placeholder="الرجاء ادخال النسبة المئوية">
+                    </div>
+                    <div class="input-group">
+                        <label for="valueNategaAfter"  class="label">نتيجة الاختبار البعدي</label>
+                        <input type="text" id="valueNategaAfter" placeholder="الرجاء ادخال نتيجة الاختبار البعدي ">
+                    </div>
+                    <div class="input-group">
+                        <label for="valuepresTwo"  class="label">النسبة المئوية</label>
+                        <input type="text" id="valuepresTwo" placeholder="الرجاء ادخال النسبة المئوية">
+                    </div>
+                </div>
+                <input type="submit" value="اضافة" class="submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- Add check out -->
+    <div class="add-date popup CheckOutSec">
+        <div class="content">
+            <div class="heading">
+                <h1 class="title">تسجيل انصراف</h1>
+                <p class="txt">برجاء قراءة الـ QR Code الخاص بك</p>
+            </div>
+            <form action="">
+                <div class="qr">
+                    <img src="../imgs/Group 64595.png" alt="">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+
+    <script>
+        $( function() {
+             $( "#startDate").datepicker();
+            //  $( "#endDate").datepicker();
+        });
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

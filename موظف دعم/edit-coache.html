@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>support-employee</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="plugins/jquery-nice-select-1.1.0/css/nice-select.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/css/bootstrap-select.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="close" id="closeSidebar"><i class="fa-solid fa-xmark"></i></div>
+        <div class="content">
+            <div class="logo">
+                <img src="../imgs/logo.png" alt="">
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="home.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/home.png" alt="">
+                        </span>
+                        الرئيسية
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="trainees.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/trainer.png" alt="">
+                        </span>
+                        قائمة المتدربين
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="list-of-coaches.html" class="active">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/Teacher.png" alt="">
+                        </span>
+                        قائمة المدربين
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/online-learning.png" alt="">
+                        </span>
+                        الدورات
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/setting.png" alt="">
+                        </span>
+                        الاعدادات
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="icon-co">
+                            <img src="../imgs/icons/noun_logout.png" alt="">
+                        </span>
+                        تسجيل الخروج
+                        <i class="fa-solid fa-angle-left icon-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar-me" id="navbar">
+        <div class="container-c">
+            <div class="content">
+                <div class="menu" id="menu">
+                    <img src="../imgs/icons/menu.png" alt="">
+                </div>
+                <form action="">
+                    <div class="input-g">
+                        <input type="text" placeholder="كلمات مفتاحية">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
+                <div class="left">
+                    <div class="not">
+                        <a href="notifications.html"></a>
+                        <img src="../imgs/icons/bell.png" alt="">
+                        <span class="number">3</span>
+                    </div>
+                    <div class="account">
+                        <img src="../imgs/icons/239395281_3017692991796113_2441625955612479858_n.png" alt="">
+                        <div class="info">
+                            <h3>أحمد مكاوي </h3>
+                            <span>اداري</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-sec" id="main">
+        <div class="container-c">
+
+            <!-- Start Text Section -->
+            <div class="text">
+                <h1 class="head">تعديل بيانات المدرب</h1>
+                <ul class="breadcrumb-me">
+                    <li class="breadcrumb-item-me"><a href="list-of-coaches.html">قائمة المدربين</a></li>
+                    <li class="breadcrumb-item-me active"> / تعديل بيانات المدرب</li>
+                </ul>
+            </div>
+
+            <!-- Start Add Trainer Section -->
+            <div class="add-new-trainer edit-coache add-new-admain">
+                <div class="add-new">
+                    <form action="">
+                        <div class="section-one section-form">
+                            <h3 class="title">بيانات المدرب</h3>
+                            <div class="content">
+
+                                <div class="trainer-photo">
+                                    <label for="userPhoto">
+                                        <div class="photo">
+                                            <img src="../imgs/cloud-storage.png" alt="" id="photo">
+                                        </div>
+                                    </label>
+                                    <div class="camera-photo">
+                                        <img src="../imgs/photo-button.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h4 class="head-photo">صورة المستخدم</h4>
+                                        <span class="txt">يرجي رفع صوره مقاس 200*200</span>
+                                    </div>
+                                    <input type="file" name="" id="userPhoto">
+                                </div>
+                                <div class="inputs">
+                                    <div class="input-g input-group-full">
+                                        <label for="">الاسم ثلاثي</label>
+                                        <input type="text" placeholder="الرجاء ادخال الاسم ثلاثي">
+                                    </div>
+                                    <div class="input-group-container">
+                                        <div class="input-g age-date">
+                                            <label for="">العمر</label>
+                                            <input type="text" placeholder='الرجاء اختيار تاريخ الميلاد' id="datepicker">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">رقم الهوية</label>
+                                            <input type="number" placeholder="الرجاء ادخال رقم الهوية">
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">رقم الجوال</label>
+                                            <input type="number" placeholder='الرجاء ادخال رقم الجوال'>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">البريد الالكترونى</label>
+                                            <input type="email" placeholder='الرجاء ادخال البريد الالكتروني'>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="city">المدينة</label>
+                                            <select name="" id="city">
+                                                <option value="" selected disabled>الرجاء اختيار المدينة</option>
+                                                <option value="1">الرجاء اختيار المدينة</option>
+                                                <option value="2">الرجاء اختيار المدينة</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">الخبرة</label>
+                                            <input type="email" placeholder='الرجاء ادخال الخبرات'>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="learnLevel">المستوي التعليمي</label>
+                                            <select name="" id="learnLevel">
+                                                <option value="" selected disabled>الرجاء اختيار المستوي التعليمي</option>
+                                                <option value="1">الرجاء اختيار المستوي التعليمي</option>
+                                                <option value="2">الرجاء اختيار المستوي التعليمي</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-g">
+                                            <label for="">اسم الدورة</label>
+                                            <!-- <input type="text" placeholder='الرجاء ادخال اسم البرنامج'> -->
+                                            <select name="" id="" multiple class="selectpicker" title="الرجاء ادخال اسم الدورة" multiple data-live-search="true" >
+                                                <!-- <option value="" selected disabled>الرجاء ادخال اسم الدورة</option> -->
+                                                <option value="">اسم</option>
+                                                <option value="">دورة</option>
+                                                <option value="">اسم</option>
+                                                <option value="">اسم</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-file-group">
+                                    <label class="label-m">المرفقات</label>
+                                    <label for="familyTwo" class='imgs'>
+                                        <img src="../imgs/icons/Icon feather-upload.png" alt="">
+                                    </label>
+                                    <input type="file" accept=".doc,.docx,.pdf" class="file-class" name="" id="familyTwo">
+                                </div>
+                                <div id="files-name"></div>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="تعديل" class="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/js/bootstrap-select.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+    <script>
+        $( function() {
+             $( "#datepicker" ).datepicker();
+        } );
+        $('.selectpicker').selectpicker();
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

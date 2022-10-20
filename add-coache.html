@@ -11,25 +11,25 @@
         <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
         <!-- <link rel="stylesheet" href="plugins/jquery-nice-select-1.1.0/css/nice-select.css"> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/css/bootstrap-select.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
 
         <!-- Style -->
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
     <div class="sidebar" id="sidebar">
         <div class="close" id="closeSidebar"><i class="fa-solid fa-xmark"></i></div>
         <div class="content">
             <div class="logo">
-                <img src="../imgs/logo.png" alt="">
+                <img src="imgs/logo.png" alt="">
             </div>
             <ul class="links">
                 <li>
                     <a href="home.html">
                         <span class="icon-co">
-                            <img src="../imgs/icons/home.png" alt="">
+                            <img src="imgs/icons/home.png" alt="">
                         </span>
                         الرئيسية
                         <i class="fa-solid fa-angle-left icon-right"></i>
@@ -38,7 +38,7 @@
                 <li>
                     <a href="trainees.html">
                         <span class="icon-co">
-                            <img src="../imgs/icons/trainer.png" alt="">
+                            <img src="imgs/icons/trainer.png" alt="">
                         </span>
                         قائمة المتدربين
                         <i class="fa-solid fa-angle-left icon-right"></i>
@@ -47,7 +47,7 @@
                 <li>
                     <a href="list-of-coaches.html" class="active">
                         <span class="icon-co">
-                            <img src="../imgs/icons/Teacher.png" alt="">
+                            <img src="imgs/icons/Teacher.png" alt="">
                         </span>
                         قائمة المدربين
                         <i class="fa-solid fa-angle-left icon-right"></i>
@@ -56,7 +56,7 @@
                 <li>
                     <a href="courses.html">
                         <span class="icon-co">
-                            <img src="../imgs/icons/online-learning.png" alt="">
+                            <img src="imgs/icons/online-learning.png" alt="">
                         </span>
                         الدورات
                         <i class="fa-solid fa-angle-left icon-right"></i>
@@ -65,7 +65,7 @@
                 <li>
                     <a href="setting.html">
                         <span class="icon-co">
-                            <img src="../imgs/icons/setting.png" alt="">
+                            <img src="imgs/icons/setting.png" alt="">
                         </span>
                         الاعدادات
                         <i class="fa-solid fa-angle-left icon-right"></i>
@@ -74,7 +74,7 @@
                 <li>
                     <a href="index.html">
                         <span class="icon-co">
-                            <img src="../imgs/icons/noun_logout.png" alt="">
+                            <img src="imgs/icons/noun_logout.png" alt="">
                         </span>
                         تسجيل الخروج
                         <i class="fa-solid fa-angle-left icon-right"></i>
@@ -88,7 +88,7 @@
         <div class="container-c">
             <div class="content">
                 <div class="menu" id="menu">
-                    <img src="../imgs/icons/menu.png" alt="">
+                    <img src="imgs/icons/menu.png" alt="">
                 </div>
                 <form action="">
                     <div class="input-g">
@@ -99,11 +99,11 @@
                 <div class="left">
                     <div class="not">
                         <a href="notifications.html"></a>
-                        <img src="../imgs/icons/bell.png" alt="">
+                        <img src="imgs/icons/bell.png" alt="">
                         <span class="number">3</span>
                     </div>
                     <div class="account">
-                        <img src="../imgs/icons/239395281_3017692991796113_2441625955612479858_n.png" alt="">
+                        <img src="imgs/icons/239395281_3017692991796113_2441625955612479858_n.png" alt="">
                         <div class="info">
                             <h3>أحمد مكاوي </h3>
                             <span>اداري</span>
@@ -137,11 +137,11 @@
                                 <div class="trainer-photo">
                                     <label for="userPhoto">
                                         <div class="photo">
-                                            <img src="../imgs/cloud-storage.png" alt="" id="photo">
+                                            <img src="imgs/cloud-storage.png" alt="" id="photo">
                                         </div>
                                     </label>
                                     <div class="camera-photo">
-                                        <img src="../imgs/photo-button.png" alt="">
+                                        <img src="imgs/photo-button.png" alt="">
                                     </div>
                                     <div class="text">
                                         <h4 class="head-photo">صورة المستخدم</h4>
@@ -195,8 +195,8 @@
                                         <div class="input-g">
                                             <label for="">اسم الدورة</label>
                                             <!-- <input type="text" placeholder='الرجاء ادخال اسم البرنامج'> -->
-                                            <select name="" id="" multiple class="selectpicker" title="الرجاء ادخال اسم الدورة" multiple data-live-search="true" >
-                                                <!-- <option value="" selected disabled>الرجاء ادخال اسم الدورة</option> -->
+                                            <select name="" id="">
+                                                <option value="" selected disabled>الرجاء ادخال اسم الدورة</option>
                                                 <option value="">اسم</option>
                                                 <option value="">دورة</option>
                                                 <option value="">اسم</option>
@@ -208,7 +208,7 @@
                                 <div class="input-file-group">
                                     <label class="label-m">المرفقات</label>
                                     <label for="familyTwo" class='imgs'>
-                                        <img src="../imgs/icons/Icon feather-upload.png" alt="">
+                                        <img src="imgs/icons/Icon feather-upload.png" alt="">
                                     </label>
                                     <input type="file" accept=".doc,.docx,.pdf" class="file-class" name="" id="familyTwo">
                                 </div>
